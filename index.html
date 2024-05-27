@@ -3,40 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div id="centralized-div">
-        <nav>
-            <button id="theme-toggle">Toggle Theme</button>
-            <button id="lang-toggle">Toggle Language</button>
-        </nav>  
+    <main id="centralized-div">
+        <header>
+            <button id="theme-toggle">
+                <img src="assets/theme-icon.svg" alt="Theme icon, half sun half moon" height="50px" width="50px">
+            </button>
+            <button id="lang-toggle">Mudar Idioma</button>
+        </header>  
         <hr>
 
-        <h1 id="about">Sobre</h1>
-        <p id="about-desc">I'm a software developer who makes open-source projects and writes about life, code, design, and more.</p>
+        <article>
+            <h1 id="about">Sobre</h1>
+            <p id="about-desc">
+                Sou um estudante de Análise e Desenvolvimento de Sistemas procurando uma primeira experiência no mercado de desenvolvimento. Tenho experiência com Java, JavaScript, C# e PHP. Meu foco principal é desenvolvimento web, já desenvolvi projetos fullstack utilizando tecnologias como Spring, Angular, ASP.NET e Node. Sempre disposto a aprender mais sobre o que já tenho familiaridade e ao mesmo tempo expandir meu leque de conhecimentos.
+            </p>
+        </article>  
         
-        <h1>Formação</h1>
+        <article>
+            <h1>Formação</h1>
+            <p>Universidade Positivo</p>
+            <p>Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+            <p>08/2022 - 08/2024</p>
+        </article>
 
         <h1>Projetos</h1>
-        
-        <h2>LigaFarma</h2>
-        <img src="assets/screenshot_liga_farma.png" height="500" width="500">
-            <p>Código: </p>
-            <p>Site</p>
-        
-        <h2>Pizzaria AC</h2>
-        <img src="assets/screenshot_pizzaria.png" height="500" width="500">
+            
+        <article>
+            <h2 class="center">LigaFarma</h2>
+            <article class="side-by-side-container">
+                <figure class="left">
+                    <img src="assets/screenshot_liga_farma.png" height="500" width="600">
+                </figure>
 
-        <h2>Squaresmasher</h2>
-        <h2>DSA</h2>
-        
-        <h1>Tech Stack</h1>
+                <div class="right">
+                    <p>Desenvolvimento de uma aplicação web de busca de emprego voltada para a indústria farmacêutica,
+                        similar ao LinkedIn e Glassdoor. Funcionalidades incluem: Criação de contas para farmacêuticos e
+                        farmácias, postagem e busca de vagas de emprego e recursos para candidatura e contratação. Criado
+                        utilizando Angular e Node.
+                    </p>
+                    <a href="https://github.com/vitorrf4/liga-farma">Repositório</a>
+                    <a href="https://ligafarma.online">Site</a>
+                </div>
+            </article>
+        </article>
 
-        <h1>Contato</h1>
-    </div>
-    
+
+        <article>
+            <h2 class="center">Pizzaria AC</h2>
+            <article class="side-by-side-container">
+                <figure class="right">
+                    <img src="assets/screenshot_pizzaria.png" height="500" width="600">
+                </figure>
+
+                <div class="left">
+                    <p>Aplicação web fullstack que simula uma pizzaria. Um frontend Angular que se comunica com uma
+                        API no backend em C# e integração com banco de dados utilizando o Entity Framework. Permite o
+                        registro e login de usuários, construção dinâmicas de pizzas, gerenciamento de um carrinho e
+                        simulação de pedidos.</p>
+                </div>
+            </article>
+        </article>
+
+
+        <article>
+            <h2 class="center">Squaresmasher</h2>
+            <article class="side-by-side-container">
+                <figure class="left">
+                    <img src="assets/screenshot_squaresmsher.png" height="500" width="600">
+                </figure>
+
+                <div class="right">
+                    <p>Aplicação web fullstack que simula uma loja de filmes. Um frontend Angular que se comunica com
+                        uma API em um backend Spring possibilita o usuário procurar filmes para adicionar ao seu estoque e
+                        ver compras dos seus itens em estoque serem geradas.
+                    </p>
+                </div>
+            </article>
+        </article>
+
+        <section>
+            <h1>Tech Stack</h1>
+            <p>Java</p>
+            <ul>
+                <li>Spring</li>
+                <li>Hibernate</li>
+            </ul>
+            <p>JavaScript</p>
+            <ul>
+                <li>Typescript</li>
+                <li>Node</li>
+                <li>Express</li>
+            </ul>
+            <p>C#</p>
+            <p>Angular</p>
+            <p>PHP</p>
+
+            <h1>Contato</h1>
+            <p>vitorrf4@gmail.com</p>
+        </section>
+
+    </main>
     <script src="scripts/script.js"> </script>
 </body>
 </html>
