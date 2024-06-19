@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: start;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     background-color: black;
     padding: 0;
     margin: 0;
@@ -23,13 +23,14 @@ a {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    margin-right: 1vw;
 }
 
 #centralized-div {
     display: flex;
     justify-content: start;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     background-color: #1c1b1b;
     color: white;
     width: 100vh;
@@ -46,8 +47,9 @@ header {
     justify-content: end;
 }
 
-img {
-    width: 650px;
+figure > img {
+    width: 700px;
+    height: 400px;
 }
 
 .center {
@@ -60,6 +62,12 @@ img {
     flex-direction: row;
     align-items: center;
 } 
+.side-by-side-container > div {
+    border: solid 3px black;
+    border-radius: 10px;
+    background-color: #3a3a3a;
+    padding: 10px;
+}
 
 .left {
     display: inline-flex;
@@ -74,4 +82,10 @@ img {
     order: 1;
     margin-right: 0;
     flex-shrink: 10;
+}
+
+#formacao {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
 }
