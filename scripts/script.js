@@ -1,11 +1,7 @@
 document.getElementById('theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('light-theme');
     document.getElementById('centralized-div').classList.toggle('light-theme');
-    let articles =  document.getElementsByClassName('side-by-side-container');
-    
-    for (let a of articles) {
-        a.classList.toggle('light-theme');
-    }
+    document.getElementById('git-icon').src = "assets/github-dark.png"
 });
 
 function changeLanguage(language) {
@@ -16,5 +12,4 @@ function changeLanguage(language) {
                 document.getElementById(key).textContent = data[key];
             }
         });
-    
 }
