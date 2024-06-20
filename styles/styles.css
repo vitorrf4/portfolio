@@ -1,39 +1,89 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    font-family: Inter, Arial, sans-serif;
-    font-size: 20px;
-    background-color: black;
-    padding: 0;
-    margin: 0;
-}
-
 a {
     text-decoration: none;
     color: white;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family: rubik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-size: 20px;
+    background-color: #191919;
+    padding: 0;
+    margin: 0;
+}
+
 body.light-theme, #centralized-div.light-theme {
-    background-color: white;
+    background-color: #eaeaea;
     color: black;
+
+    header {
+        border: 2px solid black;
+        background-color: #bcbcbc;
+    }
+
+    #centralized-div {
+        background-color: #e3e3e3;
+        color: black;
+    }
+
+    a { color: black;}
+    .side-by-side-container > div { background-color: #979797;}
 }
 
-.theme.light-theme {
-    color: black;
+/* NAV */
+header {
+    position: sticky;
+    top: 5px;
+    margin-top: 10px;
+    border: 2px solid #b5b5b5;
+    border-radius: 10px;
+    background-color: #101010;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
 }
 
+header > nav {
+    padding-left: 20px;
+}
+
+header > nav > a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#header-buttons {
+    display: flex;
+    padding-right: 20px;
+}
+
+.lang-button {
+    margin-right: 5px;
+    margin-left: 5px;
+    border: #006000 1px solid;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
 
 #theme-toggle {
     background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
     margin-right: 1vw;
+    padding-right: 5px;
 }
+
+/* MAIN */
 
 #centralized-div {
     display: flex;
@@ -50,11 +100,6 @@ body.light-theme, #centralized-div.light-theme {
     width: 100%;
     border: 1px solid #757575;
 }
-header {
-    display: flex;
-    width: 100%;
-    justify-content: end;
-}
 
 figure > img {
     width: 700px;
@@ -66,6 +111,7 @@ figure > img {
     justify-content: center;
 }
 
+/* PROJECTS */
 .side-by-side-container {
     display: flex; 
     flex-direction: row;
@@ -93,16 +139,12 @@ figure > img {
     flex-shrink: 10;
 }
 
-#formacao {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: start;
-}
-
 .icon {
     width: 100px;
     height: 100px;
 }
+
+/* FOOTER */
 #tech-stack {
     display: flex;
     flex-direction: row;
@@ -110,6 +152,14 @@ figure > img {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 2vh; 
+}
+
+#frameworks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
 
 .contact-icon {
