@@ -8,10 +8,10 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
     document.getElementsByTagName('main')[0].classList.toggle('light-theme');
     
     if (isDarkTheme) {
-        document.body.style.backgroundImage = "url('/assets/white-background.png')";
+        document.body.style.backgroundImage = "url('assets/white-background.png')";
         document.getElementById('git-icon').src = "assets/github-dark.png";
     } else {
-        document.body.style.backgroundImage = "url('/assets/dark-background.png')";
+        document.body.style.backgroundImage = "url('assets/dark-background.png')";
         document.getElementById('git-icon').src = "assets/github-white.png";
     }
     
