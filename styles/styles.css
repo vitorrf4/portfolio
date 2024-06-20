@@ -12,23 +12,25 @@ button:hover {
     background-color: #353535;}
 
 h1 {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: start;
+    flex-wrap: wrap;
     font-family: rubik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     font-size: 20px;
     padding: 0;
     margin: 0;
     background-color: #191919;
     background-image: url("../assets/dark-background.png");
+    line-height: 30px;
 }
 
 
-body.light-theme, #centralized-div.light-theme {
+body.light-theme, main.light-theme {
     background-color: #eaeaea;
     color: black;
 
@@ -37,7 +39,7 @@ body.light-theme, #centralized-div.light-theme {
         background-color: #bcbcbc;
     }
 
-    #centralized-div {
+    main {
         background-color: #e3e3e3;
         color: black;
     }
@@ -99,20 +101,16 @@ header > nav > a {
 
 /* MAIN */
 
-#centralized-div {
+main {
     display: flex;
     justify-content: start;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: start;
     background-color: #1c1b1b;
     color: white;
     width: 100vh;
     padding: 0 7vh 5vh;
-}
-
-#centralized-div > hr {
-    width: 100%;
-    border: 1px solid #757575;
 }
 
 figure > img {
@@ -134,7 +132,7 @@ figure > img {
 .side-by-side-container > div {
     border: solid 3px black;
     border-radius: 10px;
-    background-color: #3a3a3a;
+    background-color: #121212;
     padding: 10px;
 }
 
@@ -150,7 +148,6 @@ figure > img {
     flex-direction: column;
     order: 1;
     margin-right: 0;
-    flex-shrink: 10;
 }
 
 .icon {
@@ -158,24 +155,40 @@ figure > img {
     height: 100px;
 }
 
-/* FOOTER */
+.project-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    a {
+        margin-left: 5px;
+    }
+}
+
+/* STACK */
 #tech-stack {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#languages, #frameworks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#languages > div, #frameworks > div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 2vh; 
 }
 
-#frameworks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-
+/* CONTACT */
 .contact-icon {
     width: 40px;
     height: 40px;

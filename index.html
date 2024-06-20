@@ -4,45 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <link rel="icon" href="assets/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
-    <main id="centralized-div">
+    <main id="top">
         <header>
             <nav>
-                <a href="#sobre">Sobre</a>
-                <a href="#projeto">Projetos</a>
-                <a href="#tech-stack">Tech Stack</a>
-                <a href="#contato">Contato</a>
+                <a href="#top" class="sobre-texto">Sobre</a>
+                <a href="#projetos" class="projetos-texto">Projetos</a>
+                <a href="#tech-stack" class="stack-texto">Tech Stack</a>
+                <a href="#contato" class="contato-texto">Contato</a>
             </nav>
+            
             <div id="header-buttons">
                 <button id="theme-toggle">
                     <img src="assets/moon.png" alt="Theme icon, half sun half moon" height="30px">
                 </button>
-                <button class="lang-button" onclick="changeLanguage('en')">EN</button>
+                <button class="lang-button" onclick="changeLanguage('en-US')">EN</button>
                 <button class="lang-button" onclick="changeLanguage('pt')">PT</button>
             </div>
         </header>  
 
         <article id="sobre">
-            <h1 id="about">Sobre</h1>
-            <p id="about-desc">
-                Sou um estudante de Análise e Desenvolvimento de Sistemas procurando uma primeira experiência no mercado de desenvolvimento. Tenho experiência com <b>Java, JavaScript, C# e PHP</b>. Meu foco principal é desenvolvimento web, já desenvolvi projetos fullstack utilizando tecnologias como Spring, Angular, ASP.NET e Node. Sempre disposto a aprender mais sobre o que já tenho familiaridade e ao mesmo tempo expandir meu leque de conhecimentos.
-            </p>
-        </article>  
-        
-        <article id="formacao">
-            <h2>Formação</h2>
-            <p>Universidade Positivo</p>
-            <p>Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+            <h1 class="sobre-texto">Sobre</h1>
+            <p class="sobre-desc-texto">
+                Olá! Meu chamo Vitor e sou um desenvolvedor apaixonado por tecnologia e inovação. Estou em busca da minha primeira experiência profissional para aplicar e expandir meus conhecimentos em desenvolvimento de software.</p>
+            <p class="sobre-desc2-texto">
+                Ao decorrer da minha formação, adquiri habilidades sólidas em diversas linguagens de programação, incluindo C#, JavaScript e Java, e me familiarizei com frameworks populares como Angular, Spring e .NET. Meu foco principal tem sido o desenvolvimento web, mas estou sempre disposto a explorar novas tecnologias e áreas dentro da programação. </p>
+            <p class="sobre-desc3-texto">
+                Sou uma pessoa motivada, organizada e com uma grande capacidade de adaptação a novas situações e acredito que a combinação de uma base teórica forte e a aplicação prática desses conhecimentos em projetos pessoais e acadêmicos me preparou bem para ingressar no mercado de trabalho.</p>
+            <p class="sobre-desc4-texto">
+                Estou ansioso para iniciar minha carreira profissional e contribuir para projetos que façam a diferença. Se você está procurando um desenvolvedor dedicado e proativo, adoraria conversar sobre como posso contribuir para a sua empresa.</p>
+            
+            <h2 class="formacao-texto">Formação</h2>
+            <b class="universidade-texto">Universidade Positivo</b>
+            <p class="curso-texto">Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
             <p>08/2022 - 08/2024</p>
         </article>
 
-        <h1>Projetos</h1>
-            
+        <h1 id="projetos"  class="projetos-texto">Projetos</h1>
         <article>
             <h2 class="center">LigaFarma</h2>
             <article class="side-by-side-container">
@@ -51,16 +55,20 @@
                 </figure>
 
                 <div class="right">
-                    <p>Desenvolvimento de uma aplicação web de busca de emprego voltada para a indústria farmacêutica,
-                        similar ao LinkedIn e Glassdoor. Funcionalidades incluem: Criação de contas para farmacêuticos e
+                    <p  class="ligafarma-texto">Aplicação web de busca de emprego voltada para a indústria farmacêutica,
+                        similar ao LinkedIn e Glassdoor. Funcionalidades incluem a criação de contas para farmacêuticos e
                         farmácias, postagem e busca de vagas de emprego e recursos para candidatura e contratação. Criado
                         utilizando Angular e Node.
                     </p>
-                    <a class="theme" href="https://ligafarma.online" target="_blank">Site</a>
+                    <div class="project-link">
+                        <img src="assets/external_link2.png" width="30px">
+                        <a class="theme site-texto" href="https://ligafarma.online" target="_blank">
+                            Site
+                        </a>
+                    </div>
                 </div>
             </article>
         </article>
-
 
         <article>
             <h2 class="center">Pizzaria AC</h2>
@@ -70,11 +78,13 @@
                 </figure>
 
                 <div class="left">
-                    <p>Aplicação web fullstack que simula uma pizzaria. Um frontend Angular que se comunica com uma
-                        API no backend em C# e integração com banco de dados utilizando o Entity Framework. Permite o
-                        registro e login de usuários, construção dinâmicas de pizzas, gerenciamento de um carrinho e
-                        simulação de pedidos.</p>
-                    <a class="theme" href="https://github.com/vitorrf4/pizzaria-ac" target="_blank">Repositório</a>
+                    <p class="pizzaria-texto">Aplicação web fullstack que simula uma pizzaria. Um frontend Angular que se comunica com uma  API no backend em C# e integração com banco de dados utilizando o Entity Framework. Permite o  registro e login de usuários, construção dinâmicas de pizzas, gerenciamento de um carrinho e  simulação de pedidos.</p>
+                    <div class="project-link">
+                        <img src="assets/external_link2.png" width="30px">
+                        <a class="theme repositorio-texto" href="https://github.com/vitorrf4/pizzaria" target="_blank">
+                            Repositório
+                         </a>
+                    </div>
                 </div>
             </article>
         </article>
@@ -83,48 +93,55 @@
             <h2 class="center">Squaresmasher</h2>
             <article class="side-by-side-container">
                 <figure class="left">
-                    <img src="assets/s2.gif" height="500" width="600">
+                    <img src="assets/square.gif" height="500" width="600">
                 </figure>
 
                 <div class="right">
-                    <p>Aplicação web fullstack que simula uma loja de filmes. Um frontend Angular que se comunica com
+                    <p  class="squaresmasher-texto">Aplicação web fullstack que simula uma loja de filmes. Um frontend Angular que se comunica com
                         uma API em um backend Spring possibilita o usuário procurar filmes para adicionar ao seu estoque e
                         ver compras dos seus itens em estoque serem geradas.
                     </p>
-                    <a class="theme" href="https://github.com/vitorrf4/squaresmasher" target="_blank">Repositório</a>
+                    <div class="project-link">
+                        <img src="assets/external_link2.png" width="30px">
+                        <a class="theme repositorio-texto" href="https://github.com/vitorrf4/squaresmasher" target="_blank">
+                            Repositório
+                        </a>
+                    </div>
                 </div>
             </article>
         </article>
 
-        <h1 >Tech Stack</h1>
+        <h1>Tech Stack</h1>
         <section id="tech-stack">
-            <div>
-                <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-                <p>Java</p>
-            </div>
-            <div>
-                <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                <p>HTML</p>
-            </div>
-            <div>
-                <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                <p>CSS</p>
-            </div>
-            <div>
-                <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                <p>JavaScript</p>
-            </div>
-            <div>
-                <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-                <p>C#</p>
-            </div>
-            <div>
-                <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-                <p>PHP</p>
-            </div>
-            <div>
-                <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
-                <p>MySQL</p>
+            <div id="languages">
+                <div>
+                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                    <p>Java</p>
+                </div>
+                <div>
+                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                    <p>C#</p>
+                </div>
+                <div>
+                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                    <p>PHP</p>
+                </div>
+                <div>
+                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                    <p>MySQL</p>
+                </div>
             </div>
             <div id="frameworks">
                 <div>
@@ -141,12 +158,12 @@
                 </div>
                 <div>
                     <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"/>
-                    <p>ASP.NET</p>
+                    <p>.NET</p>
                 </div>
             </div>
         </section>
 
-        <h1>Contato</h1>
+        <h1  class="contato-texto">Contato</h1>
         <section id="contato">
             <div>
                 <img width="40px" src="assets/gmail_icon.png" />
@@ -154,8 +171,8 @@
             </div>
             <div>
                 <img class="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
-                <a  class="theme" href="https://www.linkedin.com/in/vitor-rosa-fernandes" target="_blank">
-                    www.linkedin.com/in/vitor-rosa-fernandes/
+                <a class="theme" href="https://www.linkedin.com/in/vitor-rosa-fernandes" target="_blank">
+                    www.linkedin.com/in/vitor-rosa-fernandes
                 </a>
             </div>
             <div>
@@ -165,6 +182,7 @@
                 </a>
             </div>
         </section>
+        
     </main>
 
     <script src="scripts/script.js"> </script>

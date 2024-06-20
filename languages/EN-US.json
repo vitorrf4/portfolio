@@ -1,0 +1,18 @@
+{
+    "sobre-texto": "About",
+    "projetos-texto": "Projects",
+    "stack-texto": "Tech Stack",
+    "contato-texto": "Contact",
+    "sobre-desc-texto": "Hello! My name is Vitor, and I am a developer passionate about technology and innovation. I am seeking my first professional experience to apply and expand my knowledge in software development.",
+    "sobre-desc2-texto": "During my education, I acquired solid skills in various programming languages, such as C#, JavaScript, and Java, and became acquainted with popular frameworks such as Angular, Spring, and .NET. My main focus has been web development, but I am always willing to explore new technologies and areas within programming.",
+    "sobre-desc3-texto": "I am a motivated, organized person with a great ability to adapt to new situations, and I believe that the combination of a strong theoretical foundation and the practical application of this knowledge in personal and academic projects has prepared me well to enter the job market.",
+    "sobre-desc4-texto": "I am eager to start my professional career and contribute to projects that make a difference. If you are looking for a dedicated and proactive developer, I would love to discuss how I can contribute to your company.",
+    "formacao-texto": "Education",
+    "universidade-texto": "Positivo University",
+    "curso-texto": "Associate's degree in System Analysis and Development",
+    "site-texto": "Website",
+    "ligafarma-texto": "A web application for job searching catered for the pharmaceutical industry, similar to LinkedIn and Glassdoor. Features include account creation for both pharmacists and pharmacies, job posting and searching, as well as resources for application and hiring. Made using Angular and Node.",
+    "pizzaria-texto": "A web application that simulates a pizzeria. The Angular frontend communicates with a backend API built in C# and integrates itself with a database using the Entity Framework ORM. It allows user registration and login, dynamic pizza order creation, cart management, and order simulation.",
+    "repositorio-texto": "Repository",
+    "squaresmasher-texto": "A web application that simulates a movie store. The Angular frontend communicates with a backend API built with Spring, allowing users to search for movies to add to their inventory and generating purchases for their stock items."
+}
