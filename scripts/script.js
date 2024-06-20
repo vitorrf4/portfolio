@@ -1,6 +1,7 @@
 document.getElementById('theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('light-theme');
     document.getElementById('centralized-div').classList.toggle('light-theme');
+    document.getElementsByClassName('theme').classList.toggle('light-theme');
 });
 
 var currentLang = 'en';
