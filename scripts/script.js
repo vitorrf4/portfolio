@@ -37,6 +37,5 @@ function changeLanguage(language) {
 
 // TODO
 // Highlight current selected language button
-// Responsive design
 // Add DSA, and C Web Server projects
 // Better design for the tech stack and projects section 
