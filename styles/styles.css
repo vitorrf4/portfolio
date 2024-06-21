@@ -101,12 +101,12 @@ header > nav > a {
     padding-right: 5px;
 }
 
-/* MAIN */
+/*!* MAIN *!*/
 
 main {
     display: flex;
-    justify-content: start;
     flex-direction: column;
+    justify-content: start;
     flex-wrap: wrap;
     align-items: start;
     background-color: #1c1b1b;
@@ -116,8 +116,7 @@ main {
 }
 
 figure > img {
-    width: 700px;
-    height: 400px;
+    width: 35vw;
 }
 
 .center {
@@ -213,13 +212,39 @@ figure > img {
 }
 
 @media(max-width: 1180px) {
+    body {
+        display: flex;
+    }
+    header {
+        position: initial;
+    }
+    main {
+        width: 100%;
+        padding: 2vh;
+    }
+    
     .side-by-side-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+    }
+    .side-by-side-container > figure {
+        img {
+            width: 85vw;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     .left, .right {
         order: 0;
     }
-    
+}
+
+@media(max-width: 600px) {
+    figure > img {
+        width: fit-content;
+        height: 40vh;
+    } 
 }
