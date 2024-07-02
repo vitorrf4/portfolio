@@ -15,5 +15,5 @@
     "pizzaria-texto": "A web application that simulates a pizzeria. The Angular frontend communicates with a backend API built in C# and integrates itself with a database using the Entity Framework ORM. It allows user registration and login, dynamic pizza order creation, cart management, and order simulation.",
     "repositorio-texto": "Repository",
     "squaresmasher-texto": "A web application that simulates a movie store. The Angular frontend communicates with a backend API built with Spring, allowing users to search for movies to add to their inventory and generating purchases for their stock items.",
-    "planner-texto": "Task management android app and website. Features include the creation, deletion and visualization of pending and concluded tasks, and real time updates between the app and the web using Server-Side Rendering. Made using Kotlin and Node."
+    "planner-texto": "Task management android app and website. Features include the creation, deletion and visualization of pending and concluded tasks, and real time updates between the app and the web using Server-Sent Events. Made using Kotlin and Node."
 }

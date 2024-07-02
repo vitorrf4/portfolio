@@ -15,5 +15,5 @@
     "pizzaria-texto": "Aplicação web que simula uma pizzaria. Um frontend Angular que se comunica com uma  API no backend em C# e integração com banco de dados utilizando o Entity Framework. Permite o  registro e login de usuários, construção dinâmicas de pizzas, gerenciamento de um carrinho e  simulação de pedidos.",
     "repositorio-texto": "Repositório",
     "squaresmasher-texto": "Aplicação web que simula uma loja de filmes. Um frontend Angular que se comunica com uma API em um backend Spring possibilita o usuário procurar filmes para adicionar ao seu estoque e ver compras dos seus itens em estoque serem geradas.",
-    "planner-texto": "Aplicativo android e site de planejamento de tarefas. Permite a criação, exclusão e visualização de tarefas pendentes e concluídas, e atualizações de suas informações em tempo real entre o site e o aplicativo utilizando Server-Side Rendering. Criado com Kotlin e Node."
+    "planner-texto": "Aplicativo android e site de planejamento de tarefas. Permite a criação, exclusão e visualização de tarefas pendentes e concluídas, e atualizações de suas informações em tempo real entre o site e o aplicativo utilizando Server-Sent Events. Criado com Kotlin e Node."
 }
